@@ -1,43 +1,44 @@
 const randomMessage = () => {
- 
+    const phrase = [];
     const partOne = Math.floor(Math.random() * 3);
     switch (partOne) {
         case 0:
-            console.log('part one a');
+            phrase.push('part one a');
             break
         case 1:
-            console.log('part one b');
+            phrase.push('part one b');
             break
         case 2:
-            console.log('part one c');
+            phrase.push('part one c');
             break
     };
     
     const partTwo = Math.floor(Math.random() * 3);
     switch (partTwo) {
         case 0:
-            console.log('part two a');
+            phrase.push('part two a');
             break
         case 1:
-            console.log('part two b');
+            phrase.push('part two b');
             break
         case 2:
-            console.log('part two c');
+            phrase.push('part two c');
             break
     };
 
     const partThree = Math.floor(Math.random() * 3);
     switch (partThree) {
         case 0:
-            console.log('part three a');
+            phrase.push('part three a');
             break
         case 1:
-            console.log('part three b');
+            phrase.push('part three b');
             break
         case 2:
-            console.log('part three c');
+            phrase.push('part three c');
             break
     };
+    console.log(phrase.join());
 }
 
 randomMessage()
